@@ -11,60 +11,76 @@
         }
     </style>
 </head>
-<body>
-    <h1 align="center">Primeira página web</h1>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, officia? Harum suscipit quod exercitationem laudantium quasi alias nobis tempora reprehenderit? Quia vero nemo, perferendis voluptas totam at est nesciunt. Labore.</p>
+<body id="corpo">
+    <header>
+        <h1 align="center">Primeira página web</h1>
+        <hr>
+    </header>
 
-    <h2>Listas</h2>
-    <hr>
-    <h3>Lista ordenada</h3>
-    <ol>
-        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, voluptatibus fugit voluptatum omnis sint eos dolores! Dicta sequi facere sapiente mollitia adipisci nesciunt veritatis velit in. Sed voluptatibus aliquam minus?</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus nesciunt deleniti quisquam iusto veniam nobis. Voluptatibus, asperiores delectus quidem reprehenderit doloribus vel illum amet harum eius dolores, blanditiis deleniti!</li>
-        <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio debitis dolorem, aspernatur inventore sapiente quas odit quo! Harum ipsam vitae incidunt delectus modi velit, nesciunt, architecto quasi quo eligendi id.
-        </li>
-    </ol>
-
-    <h3>Lista não ordenada</h3>
-    <ul type="">
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit autem, laborum ab aliquam facilis, nisi repudiandae at blanditiis magnam, sed consectetur reprehenderit molestiae numquam dolorum recusandae rerum architecto dolorem. Iste?</li>
-        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quod, officia sint reiciendis velit impedit, neque distinctio sunt eius pariatur, possimus atque culpa! Numquam voluptatibus, beatae ipsam iusto tempora cupiditate!</li>
-        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa praesentium asperiores ex animi quibusdam corrupti fuga officiis molestiae impedit porro quas corporis exercitationem ab officia accusamus rerum, sit molestias inventore.</li>
-    </ul>
-
-    <h3>Lista de definição</h3>
-    <hr>
-    <dl>
-        <dt>HTML</dt>
-            <dd>HyperText Markup Language</dd>
-    </dl>
-
-    <h2>Imagem</h2>
-    <hr>
-    <a href="https://www.youtube.com/watch?v=I69q6nDbFiA" target="_blank">
-        <img src="img-jett.png" alt="img_jett">
-    </a>
-
-    <h2>Inputs</h2>
-    <hr>
-    <input type="text">
-    <br>
-    <input type="date">
-    <br>
-    <input type="color">
-
-    <h2>Nav</h2>
-    <hr>
-    <nav>
-        <ul>
-            <li><a href="/html/">HTML</a>
-            <li><a href="/css/">CSS</a>
-            <li><a href="/js/">JavaScript</a>
-            <li><a href="/python/">Python</a>
-            <li><a href="http://unimontes.br" target="_blank">Unimontes</a>
+    <section>
+        <p id="unimontes">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, officia? Harum suscipit quod exercitationem laudantium quasi alias nobis tempora reprehenderit? Quia vero nemo, perferendis voluptas totam at est nesciunt. Labore.</p>
+        <h2>Listas</h2>
+        <hr>
+        <h3>Lista ordenada</h3>
+        <ol>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, voluptatibus fugit voluptatum omnis sint eos dolores! Dicta sequi facere sapiente mollitia adipisci nesciunt veritatis velit in. Sed voluptatibus aliquam minus?</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus nesciunt deleniti quisquam iusto veniam nobis. Voluptatibus, asperiores delectus quidem reprehenderit doloribus vel illum amet harum eius dolores, blanditiis deleniti!</li>
+            <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio debitis dolorem, aspernatur inventore sapiente quas odit quo! Harum ipsam vitae incidunt delectus modi velit, nesciunt, architecto quasi quo eligendi id.
+            </li>
+        </ol>
+        <h3>Lista não ordenada</h3>
+        <ul type="">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit autem, laborum ab aliquam facilis, nisi repudiandae at blanditiis magnam, sed consectetur reprehenderit molestiae numquam dolorum recusandae rerum architecto dolorem. Iste?</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quod, officia sint reiciendis velit impedit, neque distinctio sunt eius pariatur, possimus atque culpa! Numquam voluptatibus, beatae ipsam iusto tempora cupiditate!</li>
+            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa praesentium asperiores ex animi quibusdam corrupti fuga officiis molestiae impedit porro quas corporis exercitationem ab officia accusamus rerum, sit molestias inventore.</li>
         </ul>
-    </nav>
+        <h3>Lista de definição</h3>
+        <hr>
+        <dl>
+            <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+        </dl>
+        <h2>Imagem</h2>
+        <hr>
+        <a href="https://www.youtube.com/watch?v=I69q6nDbFiA" target="_blank">
+            <img src="img-jett.png" alt="img_jett">
+        </a>
+        <h2>Inputs</h2>
+        <hr>
+        <input type="text" id="myInput">
+        <br>
+        <input type="date">
+        <br>
+        <input type="color">
+        <br>
+ 
+        <h2>Nav</h2>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="http://unimontes.br" target="_blank">Unimontes</a>
+                <li><a href="#" onclick="escuro()">Modo escuro</a>
+                <li><a href="#" onclick="claro()">Modo claro</a>
+            </ul>
+        </nav>
+    </section>
+
+    <footer>
+        <hr>
+        <p style="text-align: center;">Copyright &copy; Wendell Bernardo</p>
+    </footer>
+
+    <script>
+
+        function escuro(){
+            document.getElementById("corpo").style.background="dimgray";
+            document.getElementById("corpo").style.color="gold"
+        }
+        function claro(){
+            document.getElementById("corpo").style.background="antiquewhite";
+            document.getElementById("corpo").style.color="black";
+        }
+    </script>
 </body>
 </html>
