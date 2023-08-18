@@ -64,6 +64,31 @@
                 <li><a href="#" onclick="claro()">Modo claro</a>
             </ul>
         </nav>
+        <br>
+
+        <h2>Formulários</h2>
+        <hr>
+        <form id="calc">
+            <p>valor 1:</p>
+            <input type="number" id="valor1" value=""/>
+            <p>valor 2:</p>
+            <input type="number" id="valor2" value=""/>
+            <p>Operação:</p>
+            <select id="operacao">
+                <option value="0" selected>Selecione uma operação...</option>
+                <option value="a">Somar</option>
+                <option value="b">Subtrair</option>
+                <option value="c">Multiplicar</option>
+                <option value="d">Dividir</option>
+            </select>
+
+            <div id="Resultado">
+
+            </div>
+
+            <br>
+            <input type="button" id="botao" value="Calcular" onclick="calcular()" style="margin-top: 20px;"/>
+        </form>
     </section>
 
     <footer>
@@ -72,7 +97,6 @@
     </footer>
 
     <script>
-
         function escuro(){
             document.getElementById("corpo").style.background="dimgray";
             document.getElementById("corpo").style.color="gold"
@@ -80,6 +104,32 @@
         function claro(){
             document.getElementById("corpo").style.background="antiquewhite";
             document.getElementById("corpo").style.color="black";
+        }
+        function calcular(){
+            var valor1 = parseInt(document.getElementById('valor1').value);
+            var valor2 = parseInt(document.getElementById('valor2').value);
+            var total;
+            var operacao = document.getElementById('operacao').value;
+
+            if(operacao=='a'){
+                //função somar
+                total = valor1+valor2;
+            }
+            else if(operacao=='b'){
+                //função subtrair
+                total = valor1-valor2;
+            }
+            else if(operacao=='c'){
+                //função multiplicar
+                total = valor1*valor2;
+            }
+            else if(operacao=='d'){
+                //função dividir
+                total = valor1/valor2;
+            }
+            
+            //window.alert("Resultado = " + total);
+            document.getElementById('Resultado').innerHTML = "<p><strong>Resultado:</strong> " + total + "</p>";
         }
     </script>
 </body>
