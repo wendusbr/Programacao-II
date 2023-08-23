@@ -89,6 +89,25 @@
             <br>
             <input type="button" id="botao" value="Calcular" onclick="calcular()" style="margin-top: 20px;"/>
         </form>
+        <hr>
+
+        <h2>Divs</h2>
+        <hr>
+        <div id="divprincipal" style="border: 1px solid black;">
+            <div id="div1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga magni quas cumque eaque. Iure dolor quisquam temporibus laboriosam reprehenderit. Nisi ut eaque placeat repellat sequi assumenda magni vitae. Commodi, itaque.</p>
+            </div>
+            <div id="div2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti alias omnis quasi odit ab? Quaerat itaque sequi fugit cumque reprehenderit. Iste reiciendis officiis id dolor eos! Voluptas ipsum voluptatibus voluptate?</p>
+            </div>
+        </div>
+        <input type="color" id="cor">
+        <select id="elemento">
+            <option value="divprincipal">divprincipal</option>
+            <option value="div1">div1</option>
+            <option value="div2">div2</option>
+        </select>
+        <input type="button" value="Aplicar" onclick="mudacor()">
     </section>
 
     <footer>
@@ -130,6 +149,13 @@
             
             //window.alert("Resultado = " + total);
             document.getElementById('Resultado').innerHTML = "<p><strong>Resultado:</strong> " + total + "</p>";
+        }
+
+        function mudacor(){
+            var cor = document.getElementById('cor').value;
+            var elemento = document.getElementById('elemento').value;
+
+            document.getElementById(elemento).style.background = cor;
         }
     </script>
 </body>
