@@ -1,0 +1,29 @@
+body{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+.container{
+    display: flex; /*Divs internas uma do lado da outra*/
+}
+
+.box-model{
+    margin: auto; /*Margem*/
+    outline: 1px solid black; /*Borda da borda*/
+    border: 1px solid goldenrod; /*Borda*/
+    padding: 5px; /*Distância interna do conteúdo para a borda*/
+    width: 300px; /*Largura*/
+    height: auto; /*Altura automática*/
+    background-color: crimson;
+    color: white;
+    text-align: justify; /*Alinhamento de texto*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
